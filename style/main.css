@@ -56,7 +56,7 @@ header nav a:hover{
 /* FILME PRINCIPAL*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/mini.jpg'); /* LINEAR VAI CRIAR UM GRADIENTE DE COR  AS DUAS CORES VÃO DAR UM TOM MASI ESCURO A IMAGEM*/
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('mini.jpg'); /* LINEAR VAI CRIAR UM GRADIENTE DE COR  AS DUAS CORES VÃO DAR UM TOM MASI ESCURO A IMAGEM*/
     height: 700px;
     background-size: cover; /* AJUSTA O TAMANHO DA IMAGEM / COVER - ÁREA DE COBERTURA */
     display: flex;
