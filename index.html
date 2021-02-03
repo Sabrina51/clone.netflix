@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
+    
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <!-- container são definidas para encaixar dos conteúdos "classes wrapper"-->
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <!-- alt + shift + baixo - clona a linha-->
+                <a href="">Inicio</a>
+                <a href="">Séries</a>
+                <a href="">Filmes</a>
+                <a href="">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">CORALINE</h3> 
+                <p class="descricao">When Coraline moves to an old house, she feels bored and neglected by her parents. She finds a hidden door with a bricked up passage. During the night, she crosses the passage and finds a parallel world where everybody has buttons instead of eyes, with caring parents and all her dreams coming true. When the Other Mother invites Coraline to stay in her world forever, the girl refuses and finds that the alternate reality where she is trapped is only a trick to lure her.</p>
+                <div class="botoes">
+                    <button role="button" class="botao"> <!-- ALGUNS DISPOSITIVOS PODEM NÃO IDENTIFICAR A FUNÇÃO ENTÃO, TEMOS QUE FALAR QUE TIPO DE ELEMENTO É ESSE "role" A FUNÇÃO DELE-->
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">  <!-- owl-theme é o tema padrão, pode ser escolhido outro-->
+            <div class="item">
+                <img class="box-filme" src="img/mini (1).jpg" alt="Insede Out movie">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (2).jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (3).jpg" alt="Zootopia movie">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (4).jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (5).jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (6).jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (7).jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini (8).jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e2ad97d64a.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>

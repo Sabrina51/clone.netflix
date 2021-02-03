@@ -1,0 +1,133 @@
+/* DECLARAÇÃO DE VARIÁVEIS
+/* DECLARA-SE NA RAIZ DO DOCUMENTO */
+
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+    /* LIMITA O CONTEÚDO DENTRO DA CAIXA
+    /* DEIXA DO CONTEÚDO LIMITADO AO TAMANHO DO BOX
+    /* SE OS ELEMENTOS FOREM MAIORES QUE A CAIXA OU OCUPAREM MUITO ESPAÇO
+    /* VÃO SE ESPREMER, MAS NÃO IRAM SAIR DA CAIXA */
+    box-sizing: border-box; 
+}
+
+/* ELEMENTOS BASE */
+body{
+    background: var(--preta); /* USO DA VAIRÁVEL DECLARADA */
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+header .container{
+     display: flex; /* FLEX BOX - ALINHAMENTO DE ELEMENTOS EM TELA*/
+     flex-direction: row;
+    /* QUESTÃO DE SEMANTICA */
+    /* É UMA PROPRIEDADE PADRÃO, JOGA TUDO PRA LINHA. O DIPLAY FLEX JÁ COLOCARIA PARA LINHA SEM ELA */
+    align-items: center; /* COLOCANDO OS ELEMENTOS NO CENTRO */
+    justify-content: space-between; /* COLOCANDO ESPAÇO ENTRE OS ELEMENTOS */
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho); /* FORMATANDO A COR DO LOGO */
+    font-family: 'Arial Black'; /* FORMATANDO O TIPO DE FONTE */
+    font-size: 40PX; /* FORMATANDO O TAMANHO DO TEXTO */
+
+}
+
+header nav a{
+    text-decoration: none; /*RETIRANDO A DECORAÇÃO DOS LINKS */
+    color: #AAA; /*COR DOS LINKS*/
+    margin-right: 10px; /*DISTANCIANDO OS LINKS */
+}
+
+header nav a:hover{
+    color: #fff; /* EFEITO DE PASSAR O MOUSE E O LINK MUDAR DE COR*/
+}
+
+
+/* FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/mini.jpg'); /* LINEAR VAI CRIAR UM GRADIENTE DE COR  AS DUAS CORES VÃO DAR UM TOM MASI ESCURO A IMAGEM*/
+    height: 700px;
+    background-size: cover; /* AJUSTA O TAMANHO DA IMAGEM / COVER - ÁREA DE COBERTURA */
+    display: flex;
+    flex-direction: column;
+
+    /* SEMPRE SE INVERTEM DEPENDENDO DA DIREÇÃO DO FLEX DIRECTION */
+    /* justify content SEMPRE SEGUE A DIREÇÃO DO FLEX DIRECTION */
+    justify-content: center; /* SEMPRE SEGUE A DIREÇÃO DO FLEX DIRECTION */
+    align-items: flex-start; /* ELEMENTOS COMEÇAM DA ESQUEDA PRA DIREITA */
+
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%; /* O PERCENTUAL FAZ UM CALCULO AUTOMÁTICO */
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    /* ESPAÇO INTERNO DO ELEMENTO - UM VALOR PÕES CIMA, BAIXO E OS LADOS */
+    /* DOIS VALORES - CIMA E LADOS */
+    padding: 15px 30PX;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* QUANDO PASSA O MOUSE EM CIMA O CURSO MUDA PARA INDICAR QUE É CLICÁVEL */
+
+    /* TRANSIÇÃO DA ANIMANÇÃO - NESSE CASO VAI DAR O EFEITO NO BOTÃO OU PASSAR O MOUSE */
+    transition: .3S ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.filme-principal .filme-principal{
+    width: 70%; /* LIMITAÇÃO DE LARGURA - PARA O TEXTO NÃO PASSAR DA TELA */
+}
+
+/* FORMATAÇÃO DAS IMAGENS */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px ;
+}
